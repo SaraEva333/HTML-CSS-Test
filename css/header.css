@@ -15,23 +15,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .header__container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 0px 15px;
-  }
+ }
+
 .header__logo {
-    max-width: 20px;
+    margin-top:5px;
 }
-.header__nav {
-    position:absolute;
-    right: 80px;
-}
-.header__nav-list {
+
+.header__nav--list {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -39,39 +37,37 @@ body {
 
 }
 
-.header__nav-item a {
+.header__nav--list-item a {
     text-decoration: none;
     color: #000000;
     font-size: 14px;
     flex-direction: row;
 }
-.header__search__icon {
+
+.header__search--icon {
     width: 48px;
     height: 48px;
     background: #FFFFFF;
-    /* light grey */
     border: 1px solid #DDDDDD;
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
     border-bottom: 0;
     border-top:0;
     border-right: 0;
-    border-right: 0;
-
 }
-.header__search__icon img {
+
+.header__search--icon img {
        height: 30%;
        width: 30%;
        margin-left: 40%;
        margin-top: 35%;
 }
-.header__nav__icon {
+
+.header__nav--icon {
     width: 48px;
     height: 48px;
     background: #FFFFFF;
-    /* light grey */
     border: 1px solid #DDDDDD;
     position:absolute;
     right: 50px;
@@ -80,12 +76,14 @@ body {
     border-top:0;
 
 }
-.header__nav__icon img {
+
+.header__nav--icon img {
         height: 30%;
         width: 30%;
         margin-left: 35%;
         margin-top: 35%;
 }
+
 @media all and (max-width: 769px) {
 .header__nav {
   display:none;
@@ -98,20 +96,23 @@ body {
     position:absolute;
     right: 80px;
 }
-.header__nav-list {
+
+.header__nav--list {
     list-style: none;
     display: flex;
     gap: 20px;
     flex-direction: row;
 
 }
-.header__nav-item a {
+
+.header__nav--list-item a {
     text-decoration: none;
     color: #000000;
     font-size: 14px;
     flex-direction: row;
 }
-.header__nav__icon{
+
+.header__nav--icon{
     display:none;
 }
 }
