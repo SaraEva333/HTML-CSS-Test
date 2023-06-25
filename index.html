@@ -3,213 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/signpost/signpost.css">
-    <link rel="stylesheet" href="css/signpost/signpost__post.css">
-    <link rel="stylesheet" href="css/signpost/signpost__post--description.css">
-    <link rel="stylesheet" href="css/signpost/signpost__post--description--info.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <title>HTML & CSS Test</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <a href="">
-                    <img src="images/header/logo.svg">
-                </a>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__nav--list">
-                    <li class="header__nav--list-item"><a href="">Study</a></li>
-                    <li class="header__nav--list-item"><a href="">International</a></li>
-                    <li class="header__nav--list-item"><a href="">Research</a></li>
-                    <li class="header__nav--list-item"><a href="">We are Beckett</a></li>
-                    <li class="header__nav--list-item"><a href="">Business</a></li>
-                    <li class="header__nav--list-item"><a href="">Covid-19</a></li>
-                </ul>
-            </nav>
-            <div class="header__nav--icon">
-                <img src="images/header/navigation.svg">
-            </div>
-            <div class="header__search--icon">
-                <img src="images/header/search.svg">
-            </div>
-        </div>
+    <header class = "header">
+        <a href="#" class = " logo header__logo">
+            <img  class = "logo__image" src="images/header/logo.svg">
+        </a>
+        <ul class = "nav header__nav">
+            <li><a href="#">Study</a></li>
+            <li><a href="#">International</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">We are Beckett</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Covid-19</a></li>
+        </ul>
+        <button class="button menu header__menu">
+            <img src="images/header/navigation.svg" alt = "Кнопка меню">
+        </button>
+        <button class="button search header_search">
+            <img src="images/header/search.svg" alt = "Кнопка поиска">
+        </button>
 </header>
-
-<section class="cards">
-    <h2 class="cards__title">Cards</h2>
-    <div class="cards__card">
-        <div class="cards__card--image">
-            <img src="images/cards/card1.jpg">
-            <div class="cards__card--frame">360°</div>
-            <div class="cards__card--line"></div>
-        </div>
-        <div class="cards__card--description">
-            <div class="cards__card--description--heading">Classic Ensuite</div>
-            <div class="cards__card--description--subheading">BROADCASTING TOWER</div>
-            <div class="cards__card--description--info">
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/calendar.svg">
-                    </div>
-                    <div class="cards__card--description--text">43 week + 1 day tenancy</div>
+<main class="cards section">
+    <h2 class="text title cards__title uppercase                  ">Cards</h2>
+    <ul class = "cardlist">
+        <li class = "card card__cardlist">
+            <div class = "card__image">
+                <img src="images/cards/Classic_Ensuite.jpg">
+                <p class="tablet image__tablet image__tablet--yellow">360°</p>
+            </div>
+            <div class="description column">
+                <div class="heading column">
+                    <h3 class="head">Classic Ensuite</h3>
+                    <h4 class="subhead uppercase">Broadcasting tower</h4>
                 </div>
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/credit-card.svg">
+                <div class="info column">
+                    <div class="line row">
+                        <img src="images/cards/calendar.svg">
+                        <p class="information">43 week + 1 day tenancy</p>
                     </div>
-                    <div class="cards__card--description--text">£183.00 per week / £7,894.62 total</div>
+                    <div class="line row">
+                        <img src="images/cards/credit-card.svg">
+                        <p class="information">£183.00 per week / £7,894.62 total</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class = "card card__cardlist">
+            <div class = "card__image">
+                <img src="images/cards/Premium_I.jpg">
+                <p class="tablet image__tablet image__tablet--yellow">360°</p>
+            </div>
+            <div class="description column">
+                <div class="heading column">
+                    <h3 class="head">Premium I</h3>
+                    <h4 class="subhead uppercase">Broadcasting tower</h4>
+                </div>
+                <div class="info column">
+                    <div class="line row">
+                        <img src="images/cards/calendar.svg">
+                        <p class="information">43 week + 1 day tenancy</p>
+                    </div>
+                    <div class="line row">
+                        <img src="images/cards/credit-card.svg">
+                        <p class="information">£195.00 per week / £8,412.30 total</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class = "card card__cardlist">
+            <div class = "card__image">
+                <img class = "card__image--cover" src="images/cards/Classic_Studio.jpg">
+            </div>
+            <div class="description column">
+                <div class="heading column">
+                    <h3 class="head">Classic Studio</h3>
+                    <h4 class="subhead uppercase">Broadcasting tower</h4>
+                </div>
+                <div class="info column">
+                    <div class="line row">
+                        <img src="images/cards/calendar.svg">
+                        <p class="information">43 week + 1 day tenancy</p>
+                    </div>
+                    <div class="line row">
+                        <img src="images/cards/credit-card.svg">
+                        <p class="information">£240.00 per week / £10,353.60 total</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class = "card card__cardlist">
+            <div class = "card__image">
+                <img src="images/cards/Premium_I_Studio.jpg">
+            </div>
+            <div class="description column">
+                <div class="heading column">
+                    <h3 class="head">Premium I Studio</h3>
+                    <h4 class="subhead uppercase">Broadcasting tower</h4>
+                </div>
+                <div class="info column">
+                    <div class="line row">
+                        <img src="images/cards/calendar.svg">
+                        <p class="information">43 week + 1 day tenancy</p>
+                    </div>
+                    <div class="line row">
+                        <img src="images/cards/credit-card.svg">
+                        <p class="information">£245.00 per week / £10,569.30 total</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </li>
+    <li class = "card card__cardlist">
+        <div class = "card__image">
+            <img src="images/cards/no_image.png">
+        </div>
+        <div class="description column">
+            <div class="heading column">
+                <h3 class="head">Standard</h3>
+                <h4 class="subhead uppercase">Mill Street</h4>
+            </div>
+            <div class="info column">
+                <div class="line row">
+                    <img src="images/cards/calendar.svg">
+                    <p class="information">43 week tenancy</p>
+                </div>
+                <div class="line row">
+                    <img src="images/cards/credit-card.svg">
+                    <p class="information">£144.00 per week / £6,192.00 total</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="cards__card">
-        <div class="cards__card--image">
-            <img src="images/cards/card2.jpg">
-            <div class="cards__card--frame">360°</div>
-            <div class="cards__card--line"></div>
-        </div>
-        <div class="cards__card--description">
-            <div class="cards__card--description--heading">Premium I</div>
-            <div class="cards__card--description--subheading">BROADCASTING TOWER</div>
-            <div class="cards__card--description--info">
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/calendar.svg">
-                    </div>
-                    <div class="cards__card--description--text">43 week + 1 day tenancy</div>
-                </div>
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/credit-card.svg">
-                    </div>
-                    <div class="cards__card--description--text">£195.00 per week / £8,412.30 total</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cards__card">
-        <div class="cards__card--image">
-            <img src="images/cards/card3.jpg">
-            <div class="cards__card--line"></div>
-        </div>
-        <div class="cards__card--description">
-            <div class="cards__card--description--heading">Classic Studio</div>
-            <div class="cards__card--description--subheading">BROADCASTING TOWER</div>
-            <div class="cards__card--description--info">
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/calendar.svg">
-                    </div>
-                    <div class="cards__card--description--text">43 week + 1 day tenancy</div>
-                </div>
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/credit-card.svg">
-                    </div>
-                    <div class="cards__card--description--text">£240.00 per week / £10,353.60 total</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cards__card">
-        <div class="cards__card--image">
-            <img src="images/cards/card4.jpg">
-            <div class="cards__card--line"></div>
-        </div>
-        <div class="cards__card--description">
-            <div class="cards__card--description--heading">Premium I Studio</div>
-            <div class="cards__card--description--subheading">BROADCASTING TOWER</div>
-            <div class="cards__card--description--info">
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/calendar.svg">
-                    </div>
-                    <div class="cards__card--description--text">43 week + 1 day tenancy</div>
-                </div>
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/credit-card.svg">
-                    </div>
-                    <div class="cards__card--description--text">£245.00 per week / £10,569.30 total</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cards__card">
-        <div class="cards__card--image">
-            <div class="cards__card--line"></div>
-        </div>
-        <div class="cards__card--description">
-            <div class="cards__card--description--heading">Standard</div>
-            <div class="cards__card--description--subheading">MILL STREET</div>
-            <div class="cards__card--description--info">
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/calendar.svg">
-                    </div>
-                    <div class="cards__card--description--text">43 week tenancy</div>
-                </div>
-                <div class="cards__card--description--row">
-                    <div class="cards__card--description--icon">
-                        <img src="images/cards/credit-card.svg">
-                    </div>
-                    <div class="cards__card--description--text">£144.00 per week / £6,192.00 total</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="signpost">
-    <h2 class="signpost__title">Post</h2>
-    <div class="signpost__post">
-        <div class="signpost__post--image">
+    </li>
+    </ul>
+</main>
+<article class="signpost section">
+    <h2 class="title signpost__title uppercase">Post</h2>
+    <div class="content">
+        <div class="signpost__imageleft">
             <img src="images/signpost/left.jpg">
         </div>
-        <div class="signpost__post--description">
-            <div class="signpost__post--description--heading">IPSUM LOREM</div>
-            <div class="signpost__post--description--vector"></div>
-            <div class="signpost__post--description--more">SHOW ME MORE</div>
-            <div class="signpost__post--description--subheading">SUBHEADING DOLOR</div>
-            <div class="signpost__post--description--info">
-                <div class="signpost__post--description--info--icon">
-                    <img src="images/signpost/calendar.svg">
+        <div class="post column signpost__post">
+            <div class="name column post__name">
+                <div class=" row post__name--gap17">
+                    <h3 class="headline post__headline uppercase">Ipsum Lorem</h3>
+                    <hr class="vector post__vector">
+                    <a class="more  post__more uppercase">Show me more</a>
                 </div>
-                <div class="signpost__post--description--info--text">
-                    <div class="signpost__post--description--info--text--link">Joint Social Work Education and Research Conference 2022</div>
-                    <div class="signpost__post--description--info--text--dash">-</div>
-                    <div class="signpost__post--description--info--text--day">Thursday</div>
-                    <div class="signpost__post--description--info--text--date">23 June 2022</div>
-                </div>
+                <h4 class="subheadline uppercase">Subheading Dolor</h4>
             </div>
-            <div class="signpost__post--description--info--arrow">
-                <img src="images/signpost/arrow.svg">
-            </div>
-            <div class="signpost__post--description--underline"></div>
-            <div class="signpost__post--description--info">
-                <div class="signpost__post--description--info--icon">
-                    <img src="images/signpost/calendar.svg">
+            <div class="events column">
+                <div class="postline row">
+                    <svg class="calendar" width="20" height="20"  viewBox="0 0 12 12" fill="grey" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.416 2.06401H8.39995V1.29601C8.39995 1.24321 8.35675 1.20001 8.30395 1.20001H7.63195C7.57915 1.20001 7.53595 1.24321 7.53595 1.29601V2.06401H4.46395V1.29601C4.46395 1.24321 4.42075 1.20001 4.36795 1.20001H3.69595C3.64315 1.20001 3.59995 1.24321 3.59995 1.29601V2.06401H1.58395C1.37155 2.06401 1.19995 2.23561 1.19995 2.44801V10.416C1.19995 10.6284 1.37155 10.8 1.58395 10.8H10.416C10.6284 10.8 10.8 10.6284 10.8 10.416V2.44801C10.8 2.23561 10.6284 2.06401 10.416 2.06401ZM9.93595 9.93601H2.06395V5.37601H9.93595V9.93601ZM2.06395 4.56001V2.92801H3.59995V3.50401C3.59995 3.55681 3.64315 3.60001 3.69595 3.60001H4.36795C4.42075 3.60001 4.46395 3.55681 4.46395 3.50401V2.92801H7.53595V3.50401C7.53595 3.55681 7.57915 3.60001 7.63195 3.60001H8.30395C8.35675 3.60001 8.39995 3.55681 8.39995 3.50401V2.92801H9.93595V4.56001H2.06395Z"/>
+                    </svg>        
+                    <p class="event"><a class="purple">Joint Social Work Education and Research Conference 2022</a> - <span class="day">Thursday</span> 23 June 2022</p>
+                    <img class="arrow" src="images/signpost/arrow.svg">
                 </div>
-                <div class="signpost__post--description--info--text">
-                    <div class="signpost__post--description--info--text--link">International SEEDS Conference 2022</div>
-                    <div class="signpost__post--description--info--text--dash">-</div>
-                    <div class="signpost__post--description--info--text--day">Wednesday</div>
-                    <div class="signpost__post--description--info--text--date">31 August 2022</div>
+                <div class="postline row">
+                    <svg class="calendar" width="20" height="20"  viewBox="0 0 12 12"fill="grey" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.416 2.06401H8.39995V1.29601C8.39995 1.24321 8.35675 1.20001 8.30395 1.20001H7.63195C7.57915 1.20001 7.53595 1.24321 7.53595 1.29601V2.06401H4.46395V1.29601C4.46395 1.24321 4.42075 1.20001 4.36795 1.20001H3.69595C3.64315 1.20001 3.59995 1.24321 3.59995 1.29601V2.06401H1.58395C1.37155 2.06401 1.19995 2.23561 1.19995 2.44801V10.416C1.19995 10.6284 1.37155 10.8 1.58395 10.8H10.416C10.6284 10.8 10.8 10.6284 10.8 10.416V2.44801C10.8 2.23561 10.6284 2.06401 10.416 2.06401ZM9.93595 9.93601H2.06395V5.37601H9.93595V9.93601ZM2.06395 4.56001V2.92801H3.59995V3.50401C3.59995 3.55681 3.64315 3.60001 3.69595 3.60001H4.36795C4.42075 3.60001 4.46395 3.55681 4.46395 3.50401V2.92801H7.53595V3.50401C7.53595 3.55681 7.57915 3.60001 7.63195 3.60001H8.30395C8.35675 3.60001 8.39995 3.55681 8.39995 3.50401V2.92801H9.93595V4.56001H2.06395Z"/>
+                    </svg>                    
+                    <p class="event"><a class="purple">International SEEDS Conference 2022</a> - <span class="day">Wednesday</span> 31 August 2022</p>
+                    <img class="arrow" src="images/signpost/arrow.svg">
                 </div>
             </div>
-            <div class="signpost__post--description--info--arrow">
-                <img src="images/signpost/arrow.svg">
-            </div>
-            <div class="signpost__post--description--underline"></div>
-            <div class="signpost__post--imgframe">
-                <img src="images/signpost/right.jpg">
-            </div>
-            <div class="signpost__post--line"></div>
+            <button class="button uppercase post__button">Show me more</button>
+        </div>
+        <div class="signpost__imageright">
+            <img src="images/signpost/right.jpg">
         </div>
     </div>
-</section>
+</article>
+
 </body>
 </html>
