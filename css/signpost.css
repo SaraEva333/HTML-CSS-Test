@@ -2,14 +2,14 @@
     margin-bottom: 10.933%;
 }
 .signpost__title{
-    padding: 80px 0;
+    margin: 80px 0;
 }
 .post{
     background-color: #f3f3f3;
     padding: 30px;
     gap: 20px;
 }
-.signpost__post{
+.content__post{
     height: auto;
     width: 80.88235%;
 }
@@ -20,19 +20,17 @@
     height: 100%;
     max-width: 2050px;
 }
-.signpost__imageleft {
+.content__imageleft {
     position: relative;
     width: 19.1176%;
     border-right: 15px solid #05c3de;
 
 }
-
-.signpost__imageleft img {
+.content__imageleft img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .name{
     gap:10px;
 }
@@ -44,10 +42,9 @@
 .post__vector,
 .post__more,
 .day,
-.signpost__imageright{
+.content__imageright{
     display: none;
 }
-
 .subheadline{
     color: #767676;
     font-size: 12px;
@@ -58,7 +55,6 @@
     flex: 1 0 0;
     gap: 15px;
 }
-
 .postline{
     gap: 10px;
     padding-bottom: 10px;
@@ -71,7 +67,6 @@
     max-width: 20px;
     max-height: 20px;
 }
-
 .purple{
     color: #753bbd;
 }
@@ -98,7 +93,7 @@
         gap: 30px;
         width: 58.604%;
     }
-    .signpost__imageleft {
+    .content__imageleft {
         position: relative;
         width: 29.30232%;
         border-right: none;
@@ -159,13 +154,13 @@
     .day{
         display: inline-block;
     }
-    .signpost__imageright{
+    .content__imageright{
         display: block;
         position: relative;
         width: 12.0930%;
         border-right: 40px solid #05c3de;
     }
-    .signpost__imageright img {
+    .content__imageright img {
         width: 100%;
         height: 100%;
         object-fit: cover;

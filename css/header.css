@@ -14,25 +14,21 @@
 .header__logo{
     margin-right: auto;
 }
-
 .logo__image{
     width: 44px;
 }
 .header__nav{
     display: none;
 }
-
 .button{
     width: 60px;
     background: #ffffff;
     border: 1px solid #DDDDDD;
     border-bottom: none;
 }
-
 .header_search{
     border-left: none;
 }
-
 @media (min-width: 1024px) {
     .logo{
         padding: 4.5px 0;

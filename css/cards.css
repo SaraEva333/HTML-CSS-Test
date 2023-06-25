@@ -11,7 +11,7 @@
     text-transform: uppercase;
 }
 .cards__title{
-    padding: 121px 0 80px 0;
+    margin: 121px 0 80px 0;
 }
 .card{
     list-style: none;
@@ -26,27 +26,24 @@
     width: 100%;
     height: auto;
 }
-  
 .tablet {
     padding: 5px 10px;
     font-weight: 700;
     font-size: 1rem;
     line-height: 115%;
 }
-.image__tablet{
+.card__tablet{
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.image__tablet--yellow{
+.card__tablet--yellow{
     background-color: #fbe200;
 }
-
 .description{
     gap: 30px;
     padding: 5.88%;
 }
-
 .heading{
     gap: 18px;
 }
@@ -78,7 +75,7 @@
 }
 @media (min-width: 1024px) {
     .cards__title{
-        padding: 4.6511627% 0;
+        margin: 80px 0;
     }    
     .card{
         display: flex;
