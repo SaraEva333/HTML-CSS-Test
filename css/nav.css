@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+    .nav__item{
+        text-decoration: none;
+        padding: 0 20px;
+    }
+}

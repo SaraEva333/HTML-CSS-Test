@@ -1,0 +1,11 @@
+.cardlist__card{
+    list-style: none;
+    border: 1px solid #ddd;
+}
+@media (min-width: 1024px) {  
+    .cardlist__card{
+        width: 51%;
+        max-width: none;
+        border-right: 10px solid #753bbd;
+    }
+}

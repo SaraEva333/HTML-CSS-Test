@@ -1,0 +1,31 @@
+.line__event--day{
+    display: none;
+}
+.line__event--purple{
+    color: #753bbd;
+}
+.line__arrow{
+    width: 13px;
+    height: 13px;
+}
+.line__event{
+    line-height: 1.38;
+    font-size: 16px;
+    line-height: 1.38;
+}
+@media (min-width: 1024px) {
+    .line__event--day
+    {
+        display: block;
+    }
+    .line__arrow{
+        margin-left: auto;
+    }
+    .line__event{
+        font-size: 18px;
+        width: 100%;
+    }
+    .line__event--day{
+        display: inline-block;
+    }
+}

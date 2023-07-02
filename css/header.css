@@ -8,20 +8,18 @@
     padding: 0 0 0 15px;
     min-width: 290px;
 }
-.logo{
-    padding: 5px 0;
-}
 .header__logo{
     margin-right: auto;
-}
-.logo__image{
+    height: 60px;
     width: 44px;
+    padding: 8px 0;
 }
 .header__nav{
     display: none;
 }
-.button{
+.header__btn{
     width: 60px;
+    height: 60px;
     background: #ffffff;
     border: 1px solid #DDDDDD;
     border-bottom: none;
@@ -30,34 +28,25 @@
     border-left: none;
 }
 @media (min-width: 1024px) {
-    .logo{
-        padding: 4.5px 0;
-    }
-    .logo__image{
+    .header__logo{
         width: 35px;
+        height: 35px;
     }
     .header__menu{
         display: none;
     }
     .header__nav{
         display: block;
-    }
-    .nav{
         list-style: none;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-right: 20px;
     }
-    .nav li a{
-        text-decoration: none;
-        padding: 0 20px;
-        font-size: 14px;
-    }
-    .search{
+    .header__search{
         border-left: 1px solid #DDDDDD;
     }
-    .button{
+    .header__btn{
         width: 53px;
         height: 53px;
     }
