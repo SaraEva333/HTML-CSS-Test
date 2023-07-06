@@ -14,6 +14,10 @@
     width: 44px;
     padding: 8px 0;
 }
+.header__image {
+    width: 44px;
+    height: 44px;
+}
 .header__nav{
     display: none;
 }
@@ -32,6 +36,10 @@
         width: 35px;
         height: 35px;
     }
+    .header__image{
+        width: 35px;
+        height: 35px;
+    }
     .header__menu{
         display: none;
     }
@@ -42,6 +50,10 @@
         flex-direction: row;
         align-items: center;
         padding-right: 20px;
+    }
+    .header__item{
+        text-decoration: none;
+        padding: 0 20px;
     }
     .header__search{
         border-left: 1px solid #DDDDDD;
