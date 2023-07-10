@@ -1,9 +1,6 @@
 .card{
     list-style: none;
-    border-left: 1px solid #ddd;
-}
-.card:last-child{
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 .card__image{
     position: relative;
@@ -26,7 +23,6 @@
 }
 .card__description{
     padding: 20px;
-    border-top: 1px solid #ddd;
 }
 
 .card__head{
@@ -61,12 +57,16 @@
 }
 @media (min-width: 1024px) {
     .card{
+        border: none;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
         border-right: 10px solid #753bbd;
         width: 51%;
         max-width: none;
+        border-left: 1px solid #ddd;
+    }
+    .card:last-child{
+    border-bottom: 1px solid #ddd;
     }
     .card__image{
         width: 38%;
@@ -86,6 +86,7 @@
         width: 61%;
         padding: 30px;
         padding-bottom: 55px;
+        border-top: 1px solid #ddd;
     }
     .card__head{
         font-size: 24px;
