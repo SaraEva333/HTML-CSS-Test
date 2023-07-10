@@ -1,6 +1,9 @@
 .card{
     list-style: none;
-    border: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.card:last-child{
+    border-bottom: 1px solid #ddd;
 }
 .card__image{
     position: relative;
@@ -17,13 +20,15 @@
     left: 0px;
     padding: 5px 10px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.15;
     background-color: #fbe200;
 }
 .card__description{
     padding: 20px;
+    border-top: 1px solid #ddd;
 }
+
 .card__head{
     font-size: 18px;
     font-weight: 700;

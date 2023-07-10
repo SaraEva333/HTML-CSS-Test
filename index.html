@@ -37,7 +37,7 @@
         <ul>
             <li class = "card">
                 <div class = "card__image">
-                    <img alt="" src="images/cards/Classic_Ensuite.jpg">
+                    <img class = "card__image--cover" alt="Room Classic Ensuite" src="images/cards/Classic_Ensuite.jpg">
                     <p class="card__label">360°</p>
                 </div>
                 <div class="card__description">
@@ -59,7 +59,7 @@
             </li>
             <li class = "card">
                 <div class = "card__image">
-                    <img alt="" src="images/cards/Premium_I.jpg">
+                    <img class = "card__image--cover" alt="Room Premium I" src="images/cards/Premium_I.jpg">
                     <p class="card__label">360°</p>
                 </div>
                 <div class="card__description">
@@ -102,7 +102,7 @@
             </li>
             <li class = "card">
                 <div class = "card__image">
-                    <img alt="" src="images/cards/Premium_I_Studio.jpg">
+                    <img class = "card__image--cover" alt="Room Premium I Studio" src="images/cards/Premium_I_Studio.jpg">
                 </div>
                 <div class="card__description">
                     <h3 class="card__head">Premium I Studio</h3>
@@ -124,7 +124,7 @@
         </li>
         <li class = "card">
             <div class = "card__image">
-                <img src="images/cards/no_image.png">
+                <img class = "card__image--cover" alt="No image" src="images/cards/no_image.png">
             </div>
             <div class="card__description">
                 <h3 class="card__head">Standard</h3>
@@ -149,7 +149,7 @@
         <h2 class="title">Post</h2>
         <div class="signpost__content">
             <div class="signpost__image-left">
-                <img src="images/signpost/left.jpg">
+                <img alt="Conference" src="images/signpost/left.jpg">
             </div>
             <div class="signpost__post">
                 <div class="signpost__name">
@@ -160,24 +160,28 @@
                     <h4 class="signpost__subheadline">Subheading Dolor</h4>
                 <div class="signpost__events">
                     <div class="signpost__line ">
-                        <svg width="20" height="20"  viewBox="0 0 12 12" fill="grey" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="signpost__icon" width="20" height="20"  viewBox="0 0 12 12" fill="grey" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.416 2.06401H8.39995V1.29601C8.39995 1.24321 8.35675 1.20001 8.30395 1.20001H7.63195C7.57915 1.20001 7.53595 1.24321 7.53595 1.29601V2.06401H4.46395V1.29601C4.46395 1.24321 4.42075 1.20001 4.36795 1.20001H3.69595C3.64315 1.20001 3.59995 1.24321 3.59995 1.29601V2.06401H1.58395C1.37155 2.06401 1.19995 2.23561 1.19995 2.44801V10.416C1.19995 10.6284 1.37155 10.8 1.58395 10.8H10.416C10.6284 10.8 10.8 10.6284 10.8 10.416V2.44801C10.8 2.23561 10.6284 2.06401 10.416 2.06401ZM9.93595 9.93601H2.06395V5.37601H9.93595V9.93601ZM2.06395 4.56001V2.92801H3.59995V3.50401C3.59995 3.55681 3.64315 3.60001 3.69595 3.60001H4.36795C4.42075 3.60001 4.46395 3.55681 4.46395 3.50401V2.92801H7.53595V3.50401C7.53595 3.55681 7.57915 3.60001 7.63195 3.60001H8.30395C8.35675 3.60001 8.39995 3.55681 8.39995 3.50401V2.92801H9.93595V4.56001H2.06395Z"/>
                         </svg>        
                         <p class="signpost__event"><a class="signpost__event--purple">Joint Social Work Education and Research Conference 2022</a> - <span class="line__event--day">Thursday</span> 23 June 2022</p>
-                        <img class="signpost__arrow" src="images/signpost/arrow.svg">
+                        <svg class="signpost__arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24405 6.5L0.5 0.582396L1.28906 0L6.5 6.5L1.28906 13L0.5 12.4176L5.24405 6.5Z" fill="#767676"/>
+                            </svg>
                     </div>
                     <div class="signpost__line">
-                        <svg width="20" height="20"  viewBox="0 0 12 12"fill="grey" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="signpost__icon" width="20" height="20"  viewBox="0 0 12 12"fill="grey" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.416 2.06401H8.39995V1.29601C8.39995 1.24321 8.35675 1.20001 8.30395 1.20001H7.63195C7.57915 1.20001 7.53595 1.24321 7.53595 1.29601V2.06401H4.46395V1.29601C4.46395 1.24321 4.42075 1.20001 4.36795 1.20001H3.69595C3.64315 1.20001 3.59995 1.24321 3.59995 1.29601V2.06401H1.58395C1.37155 2.06401 1.19995 2.23561 1.19995 2.44801V10.416C1.19995 10.6284 1.37155 10.8 1.58395 10.8H10.416C10.6284 10.8 10.8 10.6284 10.8 10.416V2.44801C10.8 2.23561 10.6284 2.06401 10.416 2.06401ZM9.93595 9.93601H2.06395V5.37601H9.93595V9.93601ZM2.06395 4.56001V2.92801H3.59995V3.50401C3.59995 3.55681 3.64315 3.60001 3.69595 3.60001H4.36795C4.42075 3.60001 4.46395 3.55681 4.46395 3.50401V2.92801H7.53595V3.50401C7.53595 3.55681 7.57915 3.60001 7.63195 3.60001H8.30395C8.35675 3.60001 8.39995 3.55681 8.39995 3.50401V2.92801H9.93595V4.56001H2.06395Z"/>
                         </svg>                    
                         <p class="signpost__event"><a class="signpost__event--purple">International SEEDS Conference 2022</a> - <span class="line__event--day">Wednesday</span> 31 August 2022</p>
-                        <img class="signpost__arrow" src="images/signpost/arrow.svg">
+                        <svg class="signpost__arrow" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24405 6.5L0.5 0.582396L1.28906 0L6.5 6.5L1.28906 13L0.5 12.4176L5.24405 6.5Z" fill="#767676"/>
+                            </svg>
                     </div>
                 </div>
                 <a class="signpost__button">Show me more</a>
             </div>
             <div class="signpost__image-right">
-                <img src="images/signpost/right.jpg">
+                <img src="images/signpost/right.jpg" alt="Decorative signpost picture">
             </div>
         </div>
     </article>
