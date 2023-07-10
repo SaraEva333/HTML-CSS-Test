@@ -1,0 +1,106 @@
+.card{
+    list-style: none;
+    border: 1px solid #ddd;
+}
+.card__image{
+    position: relative;
+}
+.card__image img{
+    border-right: 10px solid #753bbd;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card__label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.15;
+    background-color: #fbe200;
+}
+.card__description{
+    padding: 20px;
+}
+
+.card__head{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    color: #131313;
+    margin-bottom: 18px;
+}
+.card__subhead{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 30px;
+}
+.card__line{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.card__line:first-of-type{
+    margin-bottom: 11px;
+}
+.card__information{
+    font-size: 10px;
+    line-height: 1.15;
+    color: #131313;
+    font-weight: 400;
+}
+@media (min-width: 1024px) {
+    .card{
+        border: none;
+        display: flex;
+        flex-direction: row-reverse;
+        border-right: 10px solid #753bbd;
+        width: 51%;
+        max-width: none;
+        border-left: 1px solid #ddd;
+    }
+    .card:last-child{
+    border-bottom: 1px solid #ddd;
+    }
+    .card__image{
+        width: 38%;
+    }
+    .card__image img{
+        width: 100%;
+        height: 100%;
+        border-right: none;
+    }
+    .card__image--cover{
+        object-fit: cover;
+    }
+    .card__image--noimg{
+        border-right: none;
+    }
+    .card__description{
+        width: 61%;
+        padding: 30px;
+        padding-bottom: 55px;
+        border-top: 1px solid #ddd;
+    }
+    .card__head{
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 5px;
+    }
+    .card__subhead{
+        margin-bottom: 45px;
+    }
+    .card__line:first-of-type{
+        margin-bottom: 15px;
+    }
+    .card__information{
+        font-size: 12px;
+        width: 100%;
+    }
+}

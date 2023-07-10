@@ -1,0 +1,12 @@
+/* сброс стилей браузера */
+* { box-sizing: border-box; }
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,  a, th,  header, nav, section, button,ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+article, header, nav, section, img {
+	display: block;
+}
+
+/* конец кода сброса стилей браузера */
